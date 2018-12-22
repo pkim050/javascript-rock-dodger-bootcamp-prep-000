@@ -138,7 +138,7 @@ function endGame() {
     ROCKS.pop();
     tempLength--;
   }
-  window.removeEventListener('keydown', moveDodger)
+  //window.removeEventListener('keydown', moveDodger)
   alert("YOU LOSE!");
 }
 
