@@ -132,13 +132,12 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  //clearInterval(gameInterval);
+  clearInterval(gameInterval);
   var tempLength = ROCKS.length;
   for (var i = 0; i < tempLength; i++) {
     ROCKS.pop();
   }
-  console.log(ROCKS);
-  window.removeEventListener('keydown', moveDodger)
+  //window.removeEventListener('keydown', moveDodger)
   return alert("YOU LOSE!");
 }
 
