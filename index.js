@@ -110,6 +110,7 @@ function createRock(x) {
       }
       else {
         GAME.parentNode.removeChild(rock);
+        
       }
     }
 
