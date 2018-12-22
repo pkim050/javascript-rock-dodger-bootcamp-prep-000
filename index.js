@@ -132,7 +132,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  clearInterval(gameInterval);
+  //clearInterval(gameInterval);
   var tempLength = ROCKS.length;
   for (var i = 0; i < tempLength; i++) {
     ROCKS.pop();
@@ -151,7 +151,7 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-  if (e === LEFT_ARROW) {
+  if (e.which === LEFT_ARROW) {
     e.preventDefault();
     e.stopPropagation();
     moveDodgerLeft();
