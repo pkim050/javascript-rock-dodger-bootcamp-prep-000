@@ -135,6 +135,7 @@ function endGame() {
   clearInterval(gameInterval);
   var tempLength = ROCKS.length;
   while (tempLength > 0) {
+    
     console.log(ROCKS);
     tempLength--;
   }
