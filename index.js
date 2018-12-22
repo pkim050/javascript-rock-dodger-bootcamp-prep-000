@@ -100,7 +100,7 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
     else {
-      
+      var tempRock = rock.style.top.replace('px', '')
       if (rock)
     }
 
