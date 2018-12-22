@@ -133,7 +133,11 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  ROCKS.length = 0;
+  var tempLength = ROCKS.length;
+  while (tempLength > 0) {
+    ROCKS.pop();
+    tempLength--;
+  }
   window.removeEventListener('keydown', moveDodger)
   alert("YOU LOSE!");
 }
