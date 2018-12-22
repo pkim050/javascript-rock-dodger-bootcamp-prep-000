@@ -91,7 +91,7 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-    if (checkCollision(x) === true) {
+    if (checkCollision(x)) {
       endGame();
     }
     /**
@@ -133,9 +133,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  while (ROCKS.length > 0) {
-    ROCKS.pop();
-  }
+  ROCKS.length = 0;
   window.removeEventListener('keydown', moveDodger)
   alert("YOU LOSE!");
 }
