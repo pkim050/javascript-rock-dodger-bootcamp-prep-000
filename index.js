@@ -79,7 +79,6 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
   $(GAME).append(rock);
-  rock.style.top = `${top}px`;
 
   /**
    * This function moves the rock. (2 pixels at a time
@@ -100,8 +99,13 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
     else {
-      var tempRock = rock.style.top.replace('px', '')
-      if (rock)
+      var tempRock = parseInt(rock.style.top, 10);
+      if (tempRock < 400) {
+        rock.style.top = `${top += 2}px`;
+      }
+      else {
+        
+      }
     }
 
     /**
