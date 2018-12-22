@@ -92,6 +92,7 @@ function createRock(x) {
      * we should call endGame()
      */
     if (checkCollision(x)) {
+      window.requestAnimationFrame();
       endGame();
     }
     /**
