@@ -104,7 +104,7 @@ function createRock(x) {
         rock.style.top = `${top += 2}px`;
       }
       else {
-        
+        GAME.parentNode.removeChild(rock);
       }
     }
 
