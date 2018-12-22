@@ -78,7 +78,7 @@ function createRock(x) {
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
-  $("game").append(rock);
+  $(GAME).append(rock);
   rock.style.top = `${top -= 2}px`;
 
   /**
